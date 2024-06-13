@@ -167,6 +167,7 @@ Problema
 
 
 .problema{
+    background-color: white;
     padding: 110px;
     display: flex;
     align-items: center;
