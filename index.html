@@ -144,12 +144,25 @@
         <br>
         <article class="container" style="padding: 2vh;">
 
-            <label for="">Nome Completo:</label>
-            <input type="text">
-            
+  
 
-            <label for="">E-mail:</label>
-            <input type="email">
+            <label for="">Nome Completo:</label>
+            <input  
+            aria-describedby="erro-titulo"
+            type="text" 
+            id="titulo" 
+
+        >
+        <small id="erro-titulo"></small>
+            
+        <label for="">E-mail:</label>
+        <input 
+            aria-describedby="erro-descricao"
+            type="text" 
+            id="descricao" 
+            placeholder="descrição da tarefa"
+            >
+            <small id="erro-descricao"></small>
 
             <label for="">Genêro:</label>    
             <div>
@@ -170,15 +183,25 @@
              <br>
             
 
-            <label for="">Feedback:</label>
-            <input type="text">
+        <label for="">Feedback:</label>
+        <input 
+            aria-describedby="erro-feedback"
+            type="text" 
+            id="feedback" 
+            >
+            <small id="erro-feedback"></small>
            
-            <label for="">nota:</label>    
-            <input type="number" value="1">
+            <label for="">Nota:</label>
+            <input 
+            aria-describedby="erro-pontos"
+            type="number" 
+            id="pontos" 
+            value="0"
+        >
+        <small id="erro-pontos"></small>
 
 
-
-
+            <div></div>
                 <button onclick="cadastrar()" style= background-color:#c87ee6;>Enviar</button>
             </div>
 
